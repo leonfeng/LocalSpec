@@ -1,0 +1,39 @@
+{
+  "name": "@leonfeng/localspec",
+  "version": "0.1.0",
+  "description": "LocalSpec — OpenSpec overlay for local vLLM / BigBang agentic apply",
+  "keywords": ["localspec", "openspec", "vllm", "opencode", "local-models"],
+  "license": "MIT",
+  "author": "Leon Feng",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leonfeng/LocalSpec"
+  },
+  "openspecUpstream": "1.9.0",
+  "bin": {
+    "localspec": "./bin/localspec.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "overlays"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "sync-overlays": "node scripts/sync-overlays.mjs",
+    "prepublishOnly": "pnpm run build"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
+    "@fission-ai/openspec": "1.9.0",
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^6.0.3"
+  }
+}
