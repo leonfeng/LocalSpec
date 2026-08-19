@@ -1,6 +1,6 @@
 {
   "name": "@leonfeng/localspec",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "LocalSpec — OpenSpec overlay for local vLLM / BigBang agentic apply",
   "keywords": ["localspec", "openspec", "vllm", "opencode", "local-models"],
   "license": "MIT",
